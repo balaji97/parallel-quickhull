@@ -1,0 +1,3 @@
+/Users/balajijayasankar/Desktop/paralell_project/parallel_quickhull/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/balajijayasankar/Desktop/paralell_project/parallel_quickhull/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/balajijayasankar/Desktop/paralell_project/parallel_quickhull/cmake-build-debug/CMakeFiles/parallel_quickhull.dir
