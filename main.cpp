@@ -14,7 +14,7 @@ using std::cout;
 
 int main() {
     //omp_set_num_threads(256);
-    Point *P[N_POINTS];
+    Point P[N_POINTS];
 
     std::ifstream points_file(POINTS_FILE);
     std::ofstream hull_file(HULL_FILE);
@@ -24,7 +24,7 @@ int main() {
         long x, y;
         points_file>>x>>y;
 
-        P[i] = new Point(x, y, i);
+        P[i] = Point(x, y, i);
     }
 
     bool convex_hull[N_POINTS];
@@ -34,8 +34,8 @@ int main() {
 
     cout<<"Finding quickhull\n";
     auto start = std::chrono::high_resolution_clock::now();
-    parallel_quickhull(P, convex_hull, N_POINTS, N_THREADS);
-    //quick_hull(P, convex_hull, N_POINTS);
+    //parallel_quickhull(P, convex_hull, N_POINTS, N_THREADS);
+    quick_hull(P, convex_hull, N_POINTS);
     auto stop = std::chrono::high_resolution_clock::now();
     auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(stop - start);
 
@@ -44,7 +44,7 @@ int main() {
     cout<<"Writing output\n";
     for(long i = 0; i < N_POINTS; i++) {
         if(convex_hull[i]) {
-            hull_file<<P[i]->x<<" "<<P[i]->y<<"\n";
+            hull_file<<P[i].x<<" "<<P[i].y<<"\n";
         }
     }
 

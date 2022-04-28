@@ -32,3 +32,9 @@
 24	59	1650773725280642892	parallel_quickhull	ad58327c8745aa00
 1	127	1650773816048908925	CMakeFiles/parallel_quickhull.dir/parallel_quickhull.cpp.o	7f470a34aef5ead6
 127	166	1650773816088725332	parallel_quickhull	ad58327c8745aa00
+4	181	1651110949440704158	CMakeFiles/parallel_quickhull.dir/parallel_quickhull.cpp.o	7f470a34aef5ead6
+3	392	1651110949651597751	CMakeFiles/parallel_quickhull.dir/seq_quickhull.cpp.o	dda9254cbf64c3fc
+4	487	1651110949746911122	CMakeFiles/parallel_quickhull.dir/main.cpp.o	417e81a9042174f6
+487	560	1651110949821280597	parallel_quickhull	ad58327c8745aa00
+1	313	1651110989203785754	CMakeFiles/parallel_quickhull.dir/main.cpp.o	417e81a9042174f6
+313	347	1651110989239120863	parallel_quickhull	ad58327c8745aa00

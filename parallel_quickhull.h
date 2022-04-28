@@ -2,7 +2,7 @@
 
 #ifndef PARALLEL_QUICKHULL_PARALLEL_QUICKHULL_H
 
-void parallel_quickhull(Point *P[], bool convex_hull[], long n, long p=1);
+void parallel_quickhull(Point P[], bool convex_hull[], long n, long p=1);
 
 #define PARALLEL_QUICKHULL_PARALLEL_QUICKHULL_H
 

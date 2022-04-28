@@ -5,8 +5,8 @@
 
 #ifndef PARALLEL_QUICKHULL_SEQ_QUICKHULL_H
 
-void quick_hull(Point *P[], bool convex_hull[], long n);
-void upper_hull(Point *P[], bool convex_hull[], long n, Point l, Point r);
+void quick_hull(Point P[], bool convex_hull[], long n);
+void upper_hull(Point P[], bool convex_hull[], long n, Point l, Point r);
 
 #define PARALLEL_QUICKHULL_SEQ_QUICKHULL_H
 
