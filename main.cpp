@@ -3,7 +3,7 @@
 #include "seq_quickhull.h"
 #include "iostream"
 #include "chrono"
-//#include "omp.h"
+#include "omp.h"
 
 using std::cout;
 
@@ -13,7 +13,7 @@ using std::cout;
 #define HULL_FILE "/Users/balajijayasankar/Desktop/paralell_project/parallel_quickhull/data/hull.txt"
 
 int main() {
-    //omp_set_num_threads(256);
+    omp_set_num_threads(N_THREADS);
     Point P[N_POINTS];
 
     std::ifstream points_file(POINTS_FILE);
@@ -34,8 +34,8 @@ int main() {
 
     cout<<"Finding quickhull\n";
     auto start = std::chrono::high_resolution_clock::now();
-    //parallel_quickhull(P, convex_hull, N_POINTS, N_THREADS);
-    quick_hull(P, convex_hull, N_POINTS);
+    parallel_quickhull(P, convex_hull, N_POINTS, N_THREADS);
+    //quick_hull(P, convex_hull, N_POINTS);
     auto stop = std::chrono::high_resolution_clock::now();
     auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(stop - start);
 
