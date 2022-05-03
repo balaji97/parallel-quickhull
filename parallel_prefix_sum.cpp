@@ -10,7 +10,7 @@ void prefix_sum(long A[], long n, long start_index=0, long incr=1) {
 }
 
 void parallel_prefix_sum(long A[], long n, long p=1) {
-    if(n <= p) {
+    if(n <= p || p == 1) {
         prefix_sum(A, n);
         return;
     }
