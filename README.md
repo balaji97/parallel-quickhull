@@ -1,6 +1,8 @@
 # Overview
 A parallel implementation of the Quickhull algorithm to find the convex hull of points on a plane. 
 
+For an in-depth description of the algorithm, see the Project Report pdf file.
+
 # Setup instructions
 
 ## Dependencies
